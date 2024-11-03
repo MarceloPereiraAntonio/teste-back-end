@@ -72,6 +72,11 @@ Rodar as migrations
 php artisan migrate
 ```
 
+Fora do container instale as dependências do Node.js
+npm install
+```sh
+npm install
+```
 Comandos de importação de dados da API fakestoreapi
 ```sh
 php artisan categories:import Import all categories
