@@ -1,3 +1,15 @@
+## Apresentação do Projeto
+Este projeto foi desenvolvido para oferecer uma solução robusta de gerenciamento de produtos, com uma arquitetura de código organizada e eficiente. Com o objetivo de implementar boas práticas de design de software, foram aplicados os patterns Service e Repository, proporcionando maior separação de responsabilidades e facilitando a manutenção e escalabilidade do sistema, além do uso de Jobs e Laravel Horizon para gerenciamento de filas.
+
+#### Funcionalidades Implementadas
+* CRUD completo de produtos, com validação de dados e tratamento de exceções.
+
+* Filtros de busca, incluindo a possibilidade de filtrar produtos com ou sem imagem associada.
+
+* Importação de dados a partir de uma API externa, utilizando Jobs para processar as requisições em segundo plano.
+
+* Upload de imagens de produtos, com armazenamento seguro e exibição dinâmica no sistema.
+
 ### Passo a passo para rodar esse projeto
 Clone Repositório
 ```sh
