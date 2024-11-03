@@ -76,6 +76,7 @@ Fora do container instale as dependências do Node.js
 npm install
 ```sh
 npm install
+npm run dev
 ```
 Comandos de importação de dados da API fakestoreapi
 ```sh
