@@ -7,11 +7,6 @@ git clone -b https://github.com/MarceloPereiraAntonio/teste-back-end
 cd app-laravel
 ```
 
-Suba os containers do projeto
-```sh
-docker-compose up -d
-```
-
 Crie o Arquivo .env
 ```sh
 cp .env.example .env
@@ -34,7 +29,12 @@ DB_PASSWORD=yourpassword
 REDIS_HOST=redis
 REDIS_PASSWORD=null
 REDIS_PORT=6379
+```
 
+Suba os containers do projeto
+```sh
+docker-compose up -d
+```
 
 Acesse o container app
 ```sh
