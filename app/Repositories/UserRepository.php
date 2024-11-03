@@ -20,11 +20,15 @@ class UserRepository implements UserRepositoryInterface
         if (!$user) {
             return false;
         }
-        $user->update([
-            'name'     => $request['name'],
-            'email'    => $request['email'],
-            'password' => bcrypt($request['password']) ?? $user->password,
+
+        $user->fill([
+            'name' => $request['name'],
+            'email' => $request['email'],
         ]);
+        if (!empty($request['password'])) {
+            $user->password = bcrypt($request['password']);
+        }        
+        $user->save();
         return $user->toArray();
     }
 }

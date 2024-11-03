@@ -30,12 +30,14 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
+                    @if (!auth()->guest())
                     <ul class="navbar-nav me-auto">
                         <li><a class="nav-link" href="{{ route('category.index') }}">Categorias</a></li>
                         <li><a class="nav-link" href="{{ route('product.index') }}">Produtos</a></li>
 
                     </ul>
-
+                    @endif
+                    
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
